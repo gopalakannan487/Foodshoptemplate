@@ -33,7 +33,7 @@
                <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
                <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
                <!-- BOOTSTRAP CSS -->
-               <link href="css/bootstrap.min.css" rel="stylesheet">
+                 <link href="css/bootstrap.min.css" rel="stylesheet">
                <!-- FONT ICONS -->
                <link href="css/fontawesome5.css" rel="stylesheet">
                <link href="css/flaticon.css" rel="stylesheet">
@@ -42,12 +42,16 @@
                <link href="css/magnific-popup.css" rel="stylesheet">
                <link href="css/flexslider.css" rel="stylesheet">
                <link href="css/owl.carousel.min.css" rel="stylesheet">
+               <link href="css/calender.css" rel="stylesheet">
                <link href="css/owl.theme.default.min.css" rel="stylesheet">
                <link href="css/jquery.datetimepicker.min.css" rel="stylesheet">
                <!-- TEMPLATE CSS -->
                <link href="css/style.css" rel="stylesheet">
                <!-- RESPONSIVE CSS -->
                <link href="css/responsive.css" rel="stylesheet">
+               
+<link rel="stylesheet" href="css/jquery.dataTables.css" />
+
             </head>
             <body>
                <!-- PRELOADER SPINNER
@@ -97,18 +101,18 @@
                <!-- END SWITCHER -->
                <!-- HEADER-1
                   ============================================= -->
-               <header id="header-1" class="header navik-header header-shadow center-menu-1 header-transparent" >
+               <header id="header-1" style="background-color: #8f1c21;" class="header navik-header header-shadow center-menu-1 header-transparent">
                   <div class="container">
                      <!-- NAVIGATION MENU -->
                      <div class="navik-header-container">
                         <!-- CALL BUTTON -->
                         <div class="callusbtn hide"><a href="tel:123456789"><i class="fas fa-phone"></i></a></div>
                         <!-- LOGO IMAGE -->
-                        <div class="logo" data-mobile-logo="images/logo-01.png" data-sticky-logo="images/logo-01.png">
-                           <a href="#hero-1"><img src="images/logo-01.png" alt="header-logo"/></a>
+                        <div class="logo" data-mobile-logo="images/logo-white.png" data-sticky-logo="images/logo-01.png">
+                           <a href="dashboard.html"><img src="images/logo-white.png" alt="header-logo"/></a>
                         </div>
                         <!-- BURGER MENU -->
-                        <div class="burger-menu hide">
+                        <div class="burger-menu">
                            <div class="line-menu line-half first-line"></div>
                            <div class="line-menu"></div>
                            <div class="line-menu line-half last-line"></div>
@@ -117,18 +121,44 @@
                         <nav class="navik-menu menu-caret navik-yellow">
                            <ul class="top-list">
                               <!-- DROPDOWN MENU -->
-                       
+                              <li class="hide">
+                                 <a href="#">Booking</a>
+                            
+                              </li>
+                                <li  class="hide">
+                                 <a href="payment.html">PRODUCION</a>
+                            
+                              </li>
                               <!-- DROPDOWN MENU -->
-                          
+                           
                               <!-- MEGA MENU -->
-                        
+                               
                               <!-- END MEGA MENU -->
                            </ul>
                            <ul>
                               <!-- DROPDOWN MENU -->
-                              
+                              <li  class="hide">
+                                 <a href="delivery.html">DELIVERY</a>
+                                 
+                              </li>
+                              <!-- DROPDOWN MENU -->
+                              <li  class="hide">
+                                 <a href="payment.html"> PAYMENT</a>
+                               
+                              </li>
+                              <!-- DROPDOWN MENU -->
+                         
                               <!-- BASKET ICON -->
-                       
+                              <li class="basket-ico ico-30">
+                                 <a href="dashboard.html">
+                                 <span class="ico-holder"><span class="flaticon-shopping-bag"></span> <em class="roundpoint">2</em></span>
+                                 </a>
+                              </li>
+                                                            <li class="">
+                                 <a href="index.html">
+                                 <span class="ico-holder"><span class="fas fa-sign-out-alt"></span> Logout</span>
+                                 </a>
+                              </li>
                            </ul>
                         </nav>
                         <!-- END MAIN MENU -->
@@ -141,7 +171,7 @@
 
                <!-- login form -->
 
-               <div style="position: absolute;right: 10px;top: 180px;z-index: 999999;">
+               <div style="position: absolute;right: 10px;top: 180px;z-index: 9;display: none;">
                <div class="container sign-in-up ">
   <div class="row">
     <div class="">
@@ -163,7 +193,7 @@
           <fieldset>
             <div class="form-group">
               <div class="right-inner-addon">
-                <i class="fas fa-envelope"></i>
+                <i class="fa fa-envelope"></i>
                 <input class="form-control input-lg" placeholder="e-Mail Address" type="text">
               </div>
             </div>
@@ -185,7 +215,7 @@
              </div>
         </div>
         <div class="tab-pane fade" id="user1">
-          <form>
+          
           <fieldset>
             <div class="form-group">
               <div class="right-inner-addon">
@@ -201,9 +231,8 @@
             </div>
           </fieldset>
           <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-danger"><a href="dashboard.html" class="text-white"><i class="fa fa-user"></i> LOGIN</a></button>
+                <button class="btn btn-primary btn-danger"><i class="fa fa-user"></i> LOGIN</button>
              </div>
-           </form>
         </div>
       </div>
    </div>
@@ -215,6 +244,113 @@
                <!-- PAGE CONTENT
                   ============================================= -->	
                <div id="page" class="page" >
+ <section id="calender-e" class="hero-section division" style="position: relative;top: 150px;padding-bottom: 80px;">
+                  <div class="container container-event" >
+      <div class="left">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">december 2015</div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+          <div class="goto-today">
+            <div class="goto">
+              <input type="text" placeholder="mm/yyyy" class="date-input" />
+              <button class="goto-btn">Go</button>
+            </div>
+            <button class="today-btn">Today</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="today-date">
+          <div class="event-day">wed</div>
+          <div class="event-date">12th december 2022</div>
+        </div>
+        <div class="event-status mt-4 bg-white">
+   <div class="d-flex gap-4 px-4 pt-4 justify-content-between flex-wrap">
+   <div class="text-success mb-3"> <a href="production.html"><button class="btn btn-sm btn-warning"><i class="fas fa-file"></i> Prouction</button></a></div>
+   <div class="text-success  mb-3"> <a href="delivery.html"><button class="btn btn-sm btn-success"><i class="fas fa-truck-moving"></i> Delivery</button></a></div>
+   <div class="text-primary mb-3"><a href="booking.html"><button class="btn btn-sm btn-primary"><i class="fas fa-check-circle"></i> Booking</button></a></div>
+   <div class="text-danger mb-3"><a href="payment.html"><button class="btn btn-sm btn-info"><i class="fas fa-money-bill-wave-alt"></i> Payment</button></a></div>
+   </div>
+        
+
+
+        <div class="row mt-0 px-4">
+          <div class="col-md-6 mb-3">
+            <span class="text-primary">Malligai Poo Idly <span class="badge badge-dark">44</span></span>
+          </div>
+              <div class="col-md-6 mb-3">
+            <span class="text-primary">Ulundhu Idly <span class="badge badge-dark">120</span></span>
+          </div>
+              <div class="col-md-6 mb-3">
+            <span class="text-primary">Heart Idly <span class="badge badge-dark">100</span></span>
+          </div>
+              <div class="col-md-6 mb-3">
+            <span class="text-primary">Maavu <span class="badge badge-dark">100 kg</span></span>
+          </div>
+              <div class="col-md-6 mb-3">
+            <span class="text-primary">Sevai <span class="badge badge-dark">40</span></span>
+          </div>
+              <div class="col-md-6 mb-3">
+            <span class="text-primary">Chappathi(small) <span class="badge badge-dark">140</span></span>
+          </div>
+              <div class="col-md-6 mb-3">
+            <span class="text-primary">Poori(big) <span class="badge badge-dark">240</span></span>
+          </div>
+
+        </div></div>
+        <div class="events">
+  
+
+        </div>
+        <div class="add-event-wrapper">
+          <div class="add-event-header">
+            <div class="title">Add Event</div>
+            <i class="fas fa-times close"></i>
+          </div>
+          <div class="add-event-body">
+            <div class="add-event-input">
+              <input type="text" placeholder="Event Name" class="event-name" />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time From"
+                class="event-time-from"
+              />
+            </div>
+            <div class="add-event-input">
+              <input
+                type="text"
+                placeholder="Event Time To"
+                class="event-time-to"
+              />
+            </div>
+          </div>
+          <div class="add-event-footer">
+            <button class="add-event-btn">Add Event</button>
+          </div>
+        </div>
+      </div>
+      <button class="add-event">
+        <i class="fas fa-plus"></i>
+      </button>
+    </div>
+ </section>
+
+                  <div style="display: none;">
                   <!-- HERO-1
                      ============================================= -->	
                   <section id="hero-1" class="hero-section division">
@@ -259,10 +395,10 @@
                                           <div class="caption-txt white-color">
                                              <!-- Title -->
                                              <div class="title">
-                                                <h2>Discover The Real Chappathi</h2>
+                                                <h2>Discover The Real Burgers</h2>
                                              </div>
                                              <!-- Text -->
-                                             <p>Enjoy the food you love <span class="yellow-color">FROM 12</span></p>
+                                             <p>Enjoy the food you love <span class="yellow-color">FROM $6.99</span></p>
                                           </div>
                                        </div>
                                     </div>
@@ -285,7 +421,7 @@
                                           <div class="caption-txt white-color">
                                              <!-- Title -->
                                              <div class="title">
-                                                <h2>Big Poori, Little Money</h2>
+                                                <h2>Big Burger, Little Money</h2>
                                              </div>
                                              <!-- Text -->
                                              <p>Order Now: <span class="yellow-color"><a href="tel:123456789">789-654-3210</a></span></p>
@@ -306,7 +442,6 @@
                   <!-- END HERO-1 -->	
                   <!-- ABOUT-3
                      ============================================= -->
-                     <div style="display: none;">
                   <section id="about-3" class="wide-60 about-section division">
                      <div class="container">
                         <div class="row d-flex align-items-center">
@@ -537,7 +672,64 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.838357620288!2d144.95358331497258!3d-37.81725497975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4dd5a05d97%3A0x3e64f855a564844d!2zMTIxIEtpbmcgU3QsIE1lbGJvdXJuZSBWSUMgMzAwMCwg0JDQstGB0YLRgNCw0LvQuNGP!5e0!3m2!1sru!2sua!4v1605805230806!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                      </div>
                   </div>
-                </div>
+               </div>
+
+
+
+            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Count Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="row">
+      		<div class="col-md-4 mb-3">
+      			<button type="button" class="btn btn-primary">
+  Malligai Poo Idly <span class="badge badge-light">44</span>
+</button>
+      		</div>
+      		 		<div class="col-md-4 mb-3">
+      			<button type="button" class="btn btn-primary">
+  Ulundhu Idly <span class="badge badge-light">120</span>
+</button>
+      		</div>
+      				<div class="col-md-4 mb-3">
+      			<button type="button" class="btn btn-primary">
+  Heart Idly <span class="badge badge-light">100</span>
+</button>
+      		</div>
+      				<div class="col-md-4 mb-3">
+      			<button type="button" class="btn btn-primary">
+  Maavu <span class="badge badge-light">48</span>
+</button>
+      		</div>
+      				<div class="col-md-4 mb-3">
+      			<button type="button" class="btn btn-primary">
+  Sevai <span class="badge badge-light">40</span>
+</button>
+      		</div>
+      				<div class="col-md-4 mb-3">
+      			<button type="button" class="btn btn-primary">
+  Chappathi(small) <span class="badge badge-light">42</span>
+</button>
+      		</div>
+      				<div class="col-md-4 mb-3">
+      			<button type="button" class="btn btn-primary">
+  Poori(big) <span class="badge badge-light">30</span>
+</button>
+      		</div>
+
+      	</div>
+
+      </div>
+  </div>
+</div>
+</div>
+
                   <!-- FOOTER-1
                      ============================================= -->
                  <footer id="footer-3" class="footer division">
@@ -550,10 +742,10 @@
                      <div class="footer-logo"><img src="images/logo-01.png" alt="footer-logo"></div>
 
                      <!-- FOOTER SOCIAL LINKS -->
-                     <div class="footer-socials-links">
+                     <div class="footer-socials-links hide">
 
                         <!-- List -->
-                        <ul class="foo-socials text-center clearfix" style="display: none;">                                                   
+                        <ul class="foo-socials text-center clearfix">                                                   
                            <li><a href="#" class="ico-facebook"><i class="fab fa-facebook-f"></i></a></li>
                            <li><a href="#" class="ico-twitter"><i class="fab fa-twitter"></i></a></li>   
                            <li><a href="#" class="ico-instagram"><i class="fab fa-instagram"></i></a></li>
@@ -573,12 +765,12 @@
 
 
                      <!-- FOOTER LINKS -->
-                     <div class="footer-links" style="display: none;">
+                     <div class="footer-links hide">
                         <ul class="bottom-footer-list clearfix">  
-                           <li><p><a href="#">Booking</a></p></li>
-                           <li><p><a href="#">Producion</a></p></li>
-                           <li><p><a href="#">Delivery</a></p></li>
-                           <li><p><a href="#">Payment</a></p></li>
+                      <li><p><a href="#">Booking</a></p></li>
+                           <li><p><a href="production.html">Producion</a></p></li>
+                           <li><p><a href="delivery.html">Delivery</a></p></li>
+                           <li><p><a href="payment.html">Payment</a></p></li>
                         </ul>
                      </div>
 
@@ -615,6 +807,7 @@
                <script src="js/booking-form.js"></script>
                <script src="js/jquery.datetimepicker.full.js"></script>	
                <script src="js/jquery.validate.min.js"></script>
+               <script src="js/calender.js"></script>
                <script src="js/jquery.ajaxchimp.min.js"></script>	
                <!-- Custom Script -->		
                <script src="js/custom.js"></script>

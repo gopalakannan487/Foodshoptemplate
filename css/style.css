@@ -30,6 +30,18 @@ body {
   color: #283034;
   font-weight: 300;
 }
+@media(min-width: 320px) and (max-width: 969px)
+{
+  .hero-section
+  {
+    top: 10px !important;
+  }
+}
+
+.menu-caret ul li a
+{
+  color: #FFFFFF !important;
+}
 .hide
 {
   display: none !important;
